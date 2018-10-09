@@ -31,9 +31,9 @@ In order to use this API, you will need to
 * [Sandbox data](./sandboxdata.md)
 
 
-## Swagger
+## Try it out
 
-A Swagger file is located [here](./vesselstay_swagger.json). You will need to use your subscription key and the appropriate host depending on the version you're subscribed to (sandbox or live). The basepath is already filled in.
+A yaml file is located [here](https://nxtport.github.io/api/vessel_stay.yaml) which you can try out by clicking [here](https://nxtport.github.io/?api=vessel_stay).
   
 
 ## More information

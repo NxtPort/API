@@ -13,14 +13,25 @@ Get an overview of expected and in port vessels for the ports of Antwerp and Zee
 With this API you are able to get a realtime overview of all the expected and in port vessels for the ports of Antwerp and Zeebrugge. When a vessel is expected the known IN vessel will be returned. When a vessel is in-port the active voyage of that time will be returned.
 
 
+# Using the PortCall+ API
 
-## Contents of this repository
-  
-```
-/
-  /doc            technical documentation about the use of this API
-  /src            sample source code to call this API (coming soon)
-```
+In order to use this API, you will need to 
+
+* create an account on [the NxtPort market](https://market.nxtport.eu)
+* **subscribe** to the live or sandbox edition of the PortCall+ API 
+* obtain the related **subscription key** shown in the market place
+* call the API with the obtained **subscription key**
+
+## Contents
+<!--* [API Operations](./operations.md)-->
+* [How to use the API](./howtousetheapi.md)
+<!--* [Request structure](./requests.md)-->
+* [Response structure](./responses.md)
+* [Sandbox data](./sandboxdata.md)
+
+## Try it out
+
+A yaml file is located [here](https://nxtport.github.io/api/port_call_plus.yaml) which you can try out by clicking [here](https://nxtport.github.io/?api=port_call_plus).
 
 ## More information
 

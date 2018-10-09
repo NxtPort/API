@@ -14,14 +14,27 @@ The aim of the Cargo info API is to expose the information that is available in 
 
 _Note_: additional cases (updates sent by agent, partial approvals by customs ...) are being developed and the API documentation will be modified to reflect this.
 
-## Contents of this repository
+# Using the ImportConsignmentData API
 
-```
-/
-  /doc            technical documentation about the use of this API
-  /src            sample source code to call this API
-  /data           sample data (requests, responses ...)
-```
+In order to use this API, you will need to 
+* create an account on [the NxtPort market](https://market.nxtport.eu)
+* **subscribe** to the live or sandbox edition of the ImportConsignmentData API 
+* obtain the related **subscription key**
+* request a **client ID/secret** for your application
+* implement **OAuth2 authentication** against the NxtPort Identity server
+
+## Contents
+
+* [API endpoints](./endpoints.md)
+* [Authentication](./authentication.md)
+* [request structure](./requests.md)
+* [response structure](./responses.md)
+* [sandbox data](./../data/samples.md)
+
+## Try it out
+
+A yaml file is located [here](https://nxtport.github.io/import_consignment_data.yaml). You can try it out [here](https://nxtport.github.io/?api=import_consignment_data).
+
 
 ## More information
 

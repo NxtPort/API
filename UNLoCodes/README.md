@@ -22,13 +22,24 @@ The UN/LOCODE API allows you to:
 
 NxtPort keeps the API up-to-date with the latest UN dataset. Any requests for additional services or for locations to be added to the API can be discussed with NxtPort. 
 
-## Contents of this repository
-  
-```
-/
-  /doc            technical documentation about the use of this API
-  /src            sample source code to call this API (coming soon)
-```
+# Using the UN/LOCODE API
+
+In order to use this API, you will need to 
+
+* create an account on [the NxtPort market](https://market.nxtport.eu)
+* **subscribe** to the live edition of the UN/LOCODE API 
+* obtain the related **subscription key**
+* **call the API** with the obtained subscription key
+
+## Contents
+* [API Operations](./operations.md)
+* [How to use the API](./howtousetheapi.md)
+* [request structure](./requests.md)
+* [response structure](./responses.md)
+
+## Try it out
+
+A yaml file is located [here](https://nxtport.github.io/api/unlocode.yaml) which you can try out by clicking [here](https://nxtport.github.io/?api=unlocode).
 
 ## More information
 
