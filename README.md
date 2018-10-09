@@ -1,8 +1,6 @@
 # NxtPort API Documentation
 
 
-Note: Links need to be updated
-
 * [Arrival At Exit](https://github.com/NxtPort/API/tree/master/ArrivalAtExit)
 * [Green Lights](https://github.com/NxtPort/API/tree/master/GreenLights)
 * [Import Consignment Data](https://github.com/NxtPort/API/tree/master/ImportConsignmentData)
