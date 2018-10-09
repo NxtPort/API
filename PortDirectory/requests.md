@@ -1,0 +1,2 @@
+# Requests and request parameters
+Some operations that are included in the API need/accept parameters (query parameters or path parameters). These are not case sensitive, it does not matter if they are in uppercase or lower case.For a complete overview of the accepted parameters, their meaning and their location, please consult the swagger file of this API.

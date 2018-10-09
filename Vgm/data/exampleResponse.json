@@ -1,0 +1,70 @@
+{
+    "disclaimer": "Response format subject to change",
+    "references": {
+        "bookingId": "BNBASE001",
+        "containerId": "CNBASE001",
+        "parentDocument": {
+            "id": "VGM-EXAMPLE-BASE1",
+            "type": "VERMAS",
+            "senderId": "INTERWEIGHT"
+        }
+    },
+    "submitter": {
+        "party": {
+            "partyTypeCode": "Carrier",
+            "name": null,
+            "scac": "SCAC",
+            "eori": null,
+            "streetAndNumber": null,
+            "postalCode": null,
+            "place": null,
+            "countryCode": null,
+            "unstructuredAddress": null,
+            "contacts": []
+        }
+    },
+    "verifiedGrossMass": {
+        "value": "12500",
+        "uom": "KGM",
+        "weighingDate": "2017-08-12",
+        "weighingTime": "14:07:00",
+        "verificationMethod": "SM1"
+    },
+    "seals": [
+        {
+            "sealPartyTypeCode": "Unknown",
+            "sealNumber": "111"
+        }
+    ],
+    "parties": [
+        {
+            "partyTypeCode": "ResponsibleParty",
+            "name": "Interweight NV",
+            "scac": null,
+            "eori": null,
+            "streetAndNumber": null,
+            "postalCode": null,
+            "place": null,
+            "countryCode": null,
+            "unstructuredAddress": null,
+            "contacts": []
+        },
+        {
+            "partyTypeCode": "AuthorizedOfficial",
+            "name": "Jean Barre",
+            "scac": null,
+            "eori": null,
+            "streetAndNumber": null,
+            "postalCode": null,
+            "place": null,
+            "countryCode": null,
+            "unstructuredAddress": null,
+            "contacts": [
+                {
+                    "contactTypeCode": "AuthorizedResponsiblePerson",
+                    "name": "Nicolas Dupont"
+                }
+            ]
+        }
+    ]
+}

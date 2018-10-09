@@ -1,0 +1,238 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1",
+    "title": "NxtPort VGM API",
+    "description": "The VGM API provides information about the verified gross mass of a container currently used in an export flow, as provided by certified weighing stations."
+  },
+  "host": "api-sb.nxtport.eu",
+  "basePath": "/VGM/v1",
+  "paths": {
+    "/nxtportdocument/{bookingnumber}/{containernumber}": {
+      "get": {
+        "tags": [ "Document" ],
+        "summary": "Returns the VERMAS files with the according bookingnumber and containernumber",
+        "operationId": "NxtportdocumentByBookingnumberByContainernumberGet",
+        "consumes": [],
+        "produces": [ "application/json", "application/xml" ],
+        "parameters": [
+          {
+            "name": "bookingnumber",
+            "in": "path",
+            "description": "bookingnumber",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "containernumber",
+            "in": "path",
+            "description": "containernumber",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Ocp-Apim-Subscription-Key",
+            "in": "header",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": { "$ref": "#/definitions/ContainerWeightInfo" }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ContainerWeightInfo": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "disclaimer": {
+          "description": "Gets or Sets Disclaimer",
+          "type": "string"
+        },
+        "references": {
+          "$ref": "#/definitions/References",
+          "description": "Gets or Sets References"
+        },
+        "submitter": {
+          "$ref": "#/definitions/Submitter",
+          "description": "Gets or Sets Submitter"
+        },
+        "verifiedGrossMass": {
+          "$ref": "#/definitions/VerifiedGrossMass",
+          "description": "Gets or Sets VerifiedGrossMass"
+        },
+        "seals": {
+          "description": "Gets or Sets Seals",
+          "type": "array",
+          "items": { "$ref": "#/definitions/Seal" }
+        },
+        "parties": {
+          "description": "Gets or Sets Parties",
+          "type": "array",
+          "items": { "$ref": "#/definitions/Party" }
+        }
+      }
+    },
+    "References": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "bookingId": {
+          "description": "Gets or Sets BookingId",
+          "type": "string"
+        },
+        "containerId": {
+          "description": "Gets or Sets ContainerId",
+          "type": "string"
+        },
+        "parentDocument": {
+          "$ref": "#/definitions/ParentDocument",
+          "description": "Gets or Sets ParentDocument"
+        }
+      }
+    },
+    "Submitter": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "party": {
+          "$ref": "#/definitions/Party",
+          "description": "Gets or Sets Party"
+        }
+      }
+    },
+    "VerifiedGrossMass": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "Gets or Sets Value",
+          "type": "string"
+        },
+        "uom": {
+          "description": "Gets or Sets Uom",
+          "type": "string"
+        },
+        "weighingDate": {
+          "description": "Gets or Sets WeighingDate",
+          "type": "string"
+        },
+        "weighingTime": {
+          "description": "Gets or Sets WeighingTime",
+          "type": "string"
+        },
+        "verificationMethod": {
+          "description": "Gets or Sets VerificationMethod",
+          "type": "string"
+        }
+      }
+    },
+    "Seal": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "sealPartyTypeCode": {
+          "description": "Gets or Sets SealPartyTypeCode",
+          "type": "string"
+        },
+        "sealNumber": {
+          "description": "Gets or Sets SealNumber",
+          "type": "string"
+        }
+      }
+    },
+    "Party": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "partyTypeCode": {
+          "description": "Gets or Sets PartyTypeCode",
+          "type": "string"
+        },
+        "name": {
+          "description": "Gets or Sets Name",
+          "type": "string"
+        },
+        "scac": {
+          "description": "Gets or Sets Scac",
+          "type": "string"
+        },
+        "eori": {
+          "description": "Gets or Sets Eori",
+          "type": "string"
+        },
+        "streetAndNumber": {
+          "description": "Gets or Sets StreetAndNumber",
+          "type": "string"
+        },
+        "postalCode": {
+          "description": "Gets or Sets PostalCode",
+          "type": "string"
+        },
+        "place": {
+          "description": "Gets or Sets Place",
+          "type": "string"
+        },
+        "countryCode": {
+          "description": "Gets or Sets CountryCode",
+          "type": "string"
+        },
+        "unstructuredAddress": {
+          "description": "Gets or Sets UnstructuredAddress",
+          "type": "string"
+        },
+        "contacts": {
+          "description": "Gets or Sets Contacts",
+          "type": "array",
+          "items": { "$ref": "#/definitions/Contact" }
+        }
+      }
+    },
+    "ParentDocument": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Gets or Sets Id",
+          "type": "string"
+        },
+        "type": {
+          "description": "Gets or Sets Type",
+          "type": "string"
+        },
+        "senderId": {
+          "description": "Gets or Sets SenderId",
+          "type": "string"
+        }
+      }
+    },
+    "Contact": {
+      "description": "",
+      "type": "object",
+      "properties": {
+        "contactTypeCode": {
+          "description": "Gets or Sets ContactTypeCode",
+          "type": "string"
+        },
+        "name": {
+          "description": "Gets or Sets Name",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "name": "Authorization",
+      "in": "header",
+      "type": "apiKey",
+      "description": "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\""
+    }
+  }
+}

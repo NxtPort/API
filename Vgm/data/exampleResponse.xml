@@ -1,0 +1,49 @@
+<ContainerWeightInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Disclaimer>Response format subject to change</Disclaimer>
+    <References>
+        <BookingId>BNBASE001</BookingId>
+        <ContainerId>CNBASE001</ContainerId>
+        <ParentDocument>
+            <Id>VGM-EXAMPLE-BASE1</Id>
+            <Type>VERMAS</Type>
+            <SenderId>INTERWEIGHT</SenderId>
+        </ParentDocument>
+    </References>
+    <Submitter>
+        <Party>
+            <PartyTypeCode>Carrier</PartyTypeCode>
+            <Scac>SCAC</Scac>
+            <Contacts />
+        </Party>
+    </Submitter>
+    <VerifiedGrossMass>
+        <Value>12500</Value>
+        <Uom>KGM</Uom>
+        <WeighingDate>2017-08-12</WeighingDate>
+        <WeighingTime>14:07:00</WeighingTime>
+        <VerificationMethod>SM1</VerificationMethod>
+    </VerifiedGrossMass>
+    <Seals>
+        <Seal>
+            <SealPartyTypeCode>Unknown</SealPartyTypeCode>
+            <SealNumber>111</SealNumber>
+        </Seal>
+    </Seals>
+    <Parties>
+        <Party>
+            <PartyTypeCode>ResponsibleParty</PartyTypeCode>
+            <Name>Interweight NV</Name>
+            <Contacts />
+        </Party>
+        <Party>
+            <PartyTypeCode>AuthorizedOfficial</PartyTypeCode>
+            <Name>Jean Barre</Name>
+            <Contacts>
+                <Contact>
+                    <ContactTypeCode>AuthorizedResponsiblePerson</ContactTypeCode>
+                    <Name>Nicolas Dupont</Name>
+                </Contact>
+            </Contacts>
+        </Party>
+    </Parties>
+</ContainerWeightInfo>
