@@ -24,4 +24,4 @@ In order to use this API, you will need to
 
 ## Try it out
 
-A yaml file is located [here](https://nxtport.github.io/api/nmot.yaml) which you can try out by clicking [here](https://nxtport.github.io/?api=nmot).
+A yaml file is located [here](https://nxtport.github.io/api/tresco_location.yaml) which you can try out by clicking [here](https://nxtport.github.io/?api=tresco_location).
