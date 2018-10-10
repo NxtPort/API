@@ -29,9 +29,10 @@ In order to use this API, you will need to
 * [request structure](./requests.md)
 * [response structure](./responses.md)
 * [Sandbox data](./sandboxdata.md)
-## Swagger
 
-A Swagger file of the Portdirectory API is located [here](./API_v1.0_swagger.json).
+## Try it out
+
+A yaml file is located [here](https://nxtport.github.io/api/port_directory.yaml) which you can try out by clicking [here](https://nxtport.github.io/?api=port_directory).
 
 ## More information
 
