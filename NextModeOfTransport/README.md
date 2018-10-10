@@ -24,4 +24,4 @@ In order to use this API, you will need to
 
 ## Try it out
 
-A yaml file is located [here](https://nxtport.github.io/nmot.yaml). You can try it out [here](https://nxtport.github.io/?api=nmot).
+A yaml file is located [here](https://nxtport.github.io/api/nmot.yaml). You can try it out [here](https://nxtport.github.io/?api=nmot).
