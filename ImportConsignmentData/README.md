@@ -33,7 +33,7 @@ In order to use this API, you will need to
 
 ## Try it out
 
-A yaml file is located [here](https://nxtport.github.io/import_consignment_data.yaml). You can try it out [here](https://nxtport.github.io/?api=import_consignment_data).
+A yaml file is located [here](https://nxtport.github.io/api/import_consignment_data.yaml). You can try it out [here](https://nxtport.github.io/?api=import_consignment_data).
 
 
 ## More information
