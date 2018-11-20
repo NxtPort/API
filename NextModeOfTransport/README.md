@@ -1,16 +1,17 @@
-# Next Mode of Transport Notification Service API
+# Next Mode of Transport
 
-Announce the NMoT of your container to the terminal
-
-| This documentation applies to v1.0 of this API | 
-| -------- |
-
-
-## Purpose of this API
+## About
 
 By announcing the NMoT to the terminal, stacking of containers on the yard can be optimized for hinterland pickup. This can significantly shorten the turnaround time for trucks, barges and trains at the terminal , as the containers are readily available (no more 'digging out') at the correct location (trucking gate, water side, rail side).
 
-# NMoT API
+## Format
+
+NMoT visits and exchanges can be sent in three formats:
+
+* The standard NxtPort preannouncement document in XML or JSON. See the [test form for the API](https://nxtport.github.io/?api=nmot) for the structure and a generated example.
+* A more consice [alternative in CSV format](csv.md) and specific for NMoT.
+
+## How to use
 
 In order to use this API, you will need to 
 
@@ -19,9 +20,7 @@ In order to use this API, you will need to
 * obtain the related **subscription key** shown in the market place
 * call the API with the obtained **subscription key**
 
-## Contents
-...
-
 ## Try it out
 
-A yaml file is located [here](https://nxtport.github.io/api/nmot.yaml). You can try it out [here](https://nxtport.github.io/?api=nmot).
+* [Swagger file with the API definition](https://nxtport.github.io/api/nmot.yaml)
+* [Test form for the API](https://nxtport.github.io/?api=nmot)
