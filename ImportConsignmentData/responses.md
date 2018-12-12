@@ -21,12 +21,13 @@ The response will be available in XML (default) or JSON, depending on the Accept
 ## Structure details
 
 Two examples have been provided (also available in the sandbox):
-* [sample XML response](../data/exampleResponse.xml)
-* [sample JSON response](../data/exampleResponse.json)
-
-
+* [sample XML response](./exampleResponse.xml)
+* [sample JSON response](./exampleResponse.json)
 
 ### Overal structure
+
+It's important to know that all fields are optional. We'll give you everything we know about the import consignment for which you gave a valid B/L + container or vessel stay combination. This will include all containers related to the consignment.
+
 ```xml
 <ConsignmentResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <ConsignmentData>
@@ -209,8 +210,6 @@ Two examples have been provided (also available in the sandbox):
 
 The TechnicalInfo.ParentDocument.Code field is a concatenation of the action of the CUSCAR and the result of the CUSRES.
 
-
-
 | CUSCAR ACTION|
 |--------|
 |CUSCARCREATED|
@@ -225,13 +224,3 @@ The TechnicalInfo.ParentDocument.Code field is a concatenation of the action of 
 |PARTIALLYPROCESSED|
 |ACCEPTED|
 |(empty)|
-
-
-
-Read next: [Sample data](../data/samples.md)
-
-
-
-
-
-
