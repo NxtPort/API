@@ -44,7 +44,8 @@ B/L number in combination with a vessel stay number:
     },
     {
       "type": "AS2",
-      "identifier": "foobar"
+      "address": "http://gateway.somewhere.be:9500/as2",
+      "as2Identity": "as2-party-id"
     }
   ]
 }
@@ -61,7 +62,9 @@ The available channel types are:
 
 * `Email` with an email address. The import consignment data will be sent as an XML document attached to an email.
 * `Webhook`with a URL. The import consignment data will be sent as an XML document to the specified URL.
-* `AS2` with an `identifier`. Again, you'll receive the import consignment data in XML format when it's available and if you have the right to the data. Important for the AS2 channel is that you contact NxtPort support upfront to setup the AS2 connection.
+* `AS2` with an `address` and `as2Identity`. Again, you'll receive the import consignment data in XML format when it's available and if you have the right to the data. Important for the AS2 channel is that you contact NxtPort support upfront to setup the AS2 connection.
+
+Not that the types selector is case sensitive. Options are `Email`, `Webhook` and `AS2`.
 
 ## Response
 
