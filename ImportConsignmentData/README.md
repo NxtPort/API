@@ -33,7 +33,7 @@ Next the immediate request for consignment data, as described above, you can als
 The benefit of the notification service is evident in the case where an immediate request gives no result. When the notification service is used you'll get the answer when it becomes available. This saves you from polling the regular API methods until you get an answer.
 
 1. Choose the [Live or Sandbox endpoint](./endpoints.md)
-2. [Ask to be notified](./notification.md) for a combination of B/L number and container or vessel stay
+2. [Ask to be notified](./notifications.md) for a combination of B/L number and container or vessel stay
 3. When you get the notification [interpret the response](./responses.md)
 
 ## Try it out now!
