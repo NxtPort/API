@@ -16,10 +16,10 @@ When the client is created in our system and your subscription has been complete
 	* grant_type
 - your API Key
 
-
 ##	Getting an access token
 
 To get an access toen, send a POST request to `https://login.nxtport.eu/connect/token` with the following parameters in the body
+
 - username: email address of a user who is subscribed to the API
 - password: password of a user who is subscribed to the API
 - grant_type: password

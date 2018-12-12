@@ -1,0 +1,102 @@
+{
+    "consignmentData": {
+        "equipment": [
+            {
+                "equipmentType": "Container",
+                "identifier": "CNPPI111001",
+                "type": "45G0",
+                "status": "full",
+                "transportCondition": null,
+                "seal": null,
+                "weight": {
+                    "vgmWeight": "16000",
+                    "vgmWeightUnit": "KGM"
+                }
+            },
+            {
+                "equipmentType": "Container",
+                "identifier": "CNPPI111002",
+                "type": "45G0",
+                "status": "full",
+                "transportCondition": null,
+                "seal": null,
+                "weight": {
+                    "vgmWeight": "16000",
+                    "vgmWeightUnit": "KGM"
+                }
+            }
+        ],
+        "consignment": [
+            {
+                "sequenceNr": "1",
+                "seaVoyage": {
+                    "blNumber": "BMSINGLE001",
+                    "cargoAgent": {
+                        "agentCode": "CCCFC"
+                    },
+                    "portOfLoading": {
+                        "unloCode": "USBAL"
+                    },
+                    "portOfDestination": {
+                        "unloCode": "BEANR",
+                        "terminalCode": "K913"
+                    },
+                    "vessel": {
+                        "imo": "L1234567"
+                    },
+                    "vesselStay": {
+                        "stayNumber": "V185322"
+                    }
+                },
+                "goodsItem": [
+                    {
+                        "sequenceNr": "1",
+                        "description": "Coffee",
+                        "packageType": "PK",
+                        "numberOfPackages": "140",
+                        "grossWeight": "32000",
+                        "grossWeightUnit": "KGM",
+                        "customsStatus": "T1",
+                        "stuffing": [
+                            {
+                                "identifier": "CNPPI111001",
+                                "numberOfPackages": "70",
+                                "grossWeight": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "technicalInfo": {
+        "code": "CUSCARCREATEDACCEPTED",
+        "description": "a positive response was received from the customs",
+        "created": "2017-08-27T15:00:00Z",
+        "dataProvider": "NXT17000000132",
+        "parentDocument": [
+            {
+                "nxtInternalId": "123454rgrgeggrege",
+                "identifier": "112233L1234567100",
+                "type": "CUSCAR",
+                "received": "2017-08-27T15:00:00Z",
+                "dataProvider": "NXT17000000132",
+                "dataProviderCode": "CCCFC",
+                "dataProviderCodeType": "apicsAgentCode",
+                "code": "CREATED",
+                "description": "Cuscar document was sent to the customs"
+            },
+            {
+                "nxtInternalId": "fzfizigfre15198494",
+                "identifier": "112233L1234567100",
+                "type": "CUSRES",
+                "received": "2017-08-28T16:00:00Z",
+                "dataProvider": "NXT17000000158",
+                "dataProviderCode": "CCCFC",
+                "dataProviderCodeType": "apicsAgentCode",
+                "code": "ACCEPTED",
+                "description": "A positive response was received from the customs"
+            }
+        ]
+    }
+}
