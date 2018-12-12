@@ -2,24 +2,12 @@
 
 Currently, this API has a single GET method called `bl` to retrieve consignment information.
  
-Identifying the consignmenrt to retrieve can be done in three ways:
+Identifying the consignmenrt to retrieve can be done in two ways:
  
-* based on **B/L** and **agent code** (SE/SA Agent code)
 * based on **B/L** and **stay number**
 * based on **B/L** and **container reference**
 
 *A request combining a B/L with more than one of the additional parameters will be considered invalid.* 
-
-
-##	Request based on B/L and agent code
- 
-A first way to request consignment information is by specifying
-* a reference to a bill of lading (B/L)
-* an SE/SA agent identification code (as known by BE Customs in the summary declaration process)
-
-These parameters will be included in the URL as follows:
-
-`nxtportdocument/{bl number}/ag/{agent code}`
 
 
 ##	Request based on B/L and stay number
@@ -43,7 +31,5 @@ It is required that the container reference provided matches one of the containe
 These parameters will be included in the URL as follows:
 
 `nxtportdocument/{bl number}/cn/{container number}`
-
-
 
 Read next: [Response structure](./responses.md)
