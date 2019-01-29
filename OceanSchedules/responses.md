@@ -1,6 +1,6 @@
 # Responses
 
-## Ocean Schedules
+## Schedule
 The response in case of a HTTP Status Code 200 will be a JSON array of results, containing the information of a transshipment.
 
 In case of an error, the response can either be empty or can contain a JSON object (in case of authentication issues) describing the issue.
