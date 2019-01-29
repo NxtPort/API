@@ -1,0 +1,342 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "v1",
+      "title": "NxtPort INTTRA Ocean Schedules API V1",
+      "description": "The NxtPort INTTRA Ocean Schedules (v1.4) API"
+    },
+    "basePath": "/oceanschedules/v1",
+    "securityDefinitions": {
+      "apiKeyHeader": {
+        "type": "apiKey",
+        "name": "Ocp-Apim-Subscription-Key",
+        "in": "header"
+      },
+      "apiKeyQuery": {
+        "type": "apiKey",
+        "name": "subscription-key",
+        "in": "query"
+      }
+    },
+    "security": [
+      {
+        "apiKeyHeader": []
+      },
+      {
+        "apiKeyQuery": []
+      }
+    ],
+    "paths": {
+      "/schedule": {
+        "get": {
+          "tags": [
+            "Oceanschedules"
+          ],
+          "summary": "Retrieve a list of port-pairs matching the provided search criteria.",
+          "operationId": "OceanschedulesSchedule",
+          "produces": [
+            "text/plain",
+            "application/json",
+            "text/json",
+            "application/xml",
+            "text/xml"
+          ],
+          "parameters": [
+            {
+              "name": "originPort",
+              "in": "query",
+              "required": true,
+              "type": "string",
+              "description": "UNECE Location Code for Origin Port"
+            },
+            {
+              "name": "destinationPort",
+              "in": "query",
+              "required": true,
+              "type": "string",
+              "description": "UNECE Location Code for Destination Port"
+            },
+            {
+              "name": "searchDate",
+              "required": true,
+              "in": "query",
+              "type": "string",
+              "description": "String representing a date in YYYY-MM-DD format, e.g., 2017-06-01."
+            },
+            {
+              "name": "searchDateType",
+              "required": true,
+              "in": "query",
+              "type": "string",
+              "description": "ByDepartureDate ByArrivalDate"
+            },
+            {
+              "name": "weeksOut",
+              "required": true,
+              "in": "query",
+              "type": "integer",
+              "description": "An integer value from 1 to 6"
+            },
+            {
+              "name": "scacs",
+              "required": false,
+              "in": "query",
+              "type": "string",
+              "description": "Comma separated list of SCAC Codes"
+            },
+            {
+              "name": "directOnly",
+              "required": false,
+              "in": "query",
+              "type": "boolean",
+              "description": "false = Search for direct and transshipment, true = Search for direct shipments only"
+            },
+            {
+              "name": "includeNearbyOriginPorts",
+              "required": false,
+              "in": "query",
+              "type": "boolean",
+              "description": "false = Only use specified Origin port, true = Include surrounding ports near Origin port"
+            },
+            {
+              "name": "includeNearbyDestinationPorts",
+              "required": false,
+              "in": "query",
+              "type": "boolean",
+              "description": "false = Only use specified Destination port, true = Include surrounding ports near Destination  port"
+            },
+            {
+              "name": "Ocp-Apim-Subscription-Key",
+              "in": "header",
+              "required": false,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "schema": {
+                "$ref": "#/definitions/PortpairList"
+              }
+            },
+            "400": {
+              "description": "Bad Request"
+            },
+            "401": {
+              "description": "Unauthorized"
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "schema": {
+                "$ref": "#/definitions/InttraError"
+              }
+            },
+            "502": {
+              "description": "Bad Gateway",
+              "schema": {
+                "$ref": "#/definitions/InttraError"
+              }
+            },
+            "504": {
+              "description": "Gateway Timeout",
+              "schema": {
+                "$ref": "#/definitions/InttraError"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "PortpairList": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Portpair"
+        }
+      },
+      "Portpair": {
+        "type": "object",
+        "properties": {
+          "scac": {
+            "type": "string"
+          },
+          "carrierName": {
+            "type": "string"
+          },
+          "terminalCutoff": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "estimatedTerminalCutoff": {
+            "type": "boolean"
+          },
+          "bkCutoff": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "siCutoff": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "hazBkCutoff": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "vgmCutoff": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "reeferCutoff": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "serviceName": {
+            "type": "string"
+          },
+          "vesselName": {
+            "type": "string"
+          },
+          "voyageNumber": {
+            "type": "string"
+          },
+          "imoNumber": {
+            "type": "string"
+          },
+          "originUnloc": {
+            "type": "string"
+          },
+          "originCityName": {
+            "type": "string"
+          },
+          "originSubdivision": {
+            "type": "string"
+          },
+          "originCountry": {
+            "type": "string"
+          },
+          "originTerminal": {
+            "type": "string"
+          },
+          "originDepartureDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "destinationUnloc": {
+            "type": "string"
+          },
+          "destinationCityName": {
+            "type": "string"
+          },
+          "destinationSubdivision": {
+            "type": "string"
+          },
+          "destinationCountry": {
+            "type": "string"
+          },
+          "destinationTerminal": {
+            "type": "string"
+          },
+          "destinationArrivalDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "totalDuration": {
+            "type": "integer"
+          },
+          "scheduleType": {
+            "type": "string"
+          },
+          "legs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Leg"
+            }
+          }
+        }
+      },
+      "Leg": {
+        "type": "object",
+        "properties": {
+          "sequence": {
+            "type": "integer"
+          },
+          "serviceName": {
+            "type": "string"
+          },
+          "transportType": {
+            "type": "string"
+          },
+          "transportName": {
+            "type": "string"
+          },
+          "conveyanceNumber": {
+            "type": "string"
+          },
+          "transportID": {
+            "type": "string"
+          },
+          "departureUnloc": {
+            "type": "string"
+          },
+          "departureCityName": {
+            "type": "string"
+          },
+          "departureSubdivision": {
+            "type": "string"
+          },
+          "departureCountry": {
+            "type": "string"
+          },
+          "departureTerminal": {
+            "type": "string"
+          },
+          "departureDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "arrivalUnloc": {
+            "type": "string"
+          },
+          "arrivalCityName": {
+            "type": "string"
+          },
+          "arrivalSubdivision": {
+            "type": "string"
+          },
+          "arrivalCountry": {
+            "type": "string"
+          },
+          "arrivalTerminal": {
+            "type": "string"
+          },
+          "arrivalDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "transitDuration": {
+            "type": "integer"
+          },
+          "transshipmentIndicator": {
+            "type": "boolean"
+          }
+        }
+      },
+      "InttraError": {
+        "type": "object",
+        "properties": {
+          "errorCode": {
+            "type": "integer"
+          },
+          "errorMessages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "uuid": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
