@@ -20,6 +20,7 @@ Find out more about what our API's look like and what you can do with them.
 * [Vessel Stay](https://github.com/NxtPort/API/tree/master/VesselStay)
 * [VGM](https://github.com/NxtPort/API/tree/master/Vgm)
 * [eBalie+ Notification Service](https://github.com/NxtPort/API/tree/master/eBaliePlusNotificationService)
+* [Ocean Schedules](https://github.com/NxtPort/API/tree/master/OceanSchedules)
 
 ## Swagger definitions
 
@@ -32,6 +33,7 @@ Discover and interact with the NxtPort API's without having any of the implement
 * [UN Location Codes](https://nxtport.github.io/?api=unlocode)
 * [Vessel Stay](https://nxtport.github.io/?api=vessel_stay)
 * [VGM](https://nxtport.github.io/?api=vgm)
-* [Next Mode of Transport](https://nxtport.github.io/?api=nmot) 
+* [Next Mode of Transport](https://nxtport.github.io/?api=nmot)
+* [Ocean Schedules](https://nxtport.github.io/?api=ocean_schedules)
 
 More information about the OpenAPI specification at [openapis.org](https://www.openapis.org/).
