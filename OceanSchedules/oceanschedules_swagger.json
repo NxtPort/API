@@ -35,11 +35,7 @@
           "summary": "Retrieve a list of port-pairs matching the provided search criteria.",
           "operationId": "OceanschedulesSchedule",
           "produces": [
-            "text/plain",
             "application/json",
-            "text/json",
-            "application/xml",
-            "text/xml"
           ],
           "parameters": [
             {
