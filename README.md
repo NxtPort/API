@@ -8,15 +8,15 @@ If you are a business person, or you want to read about our API's from a functio
 
 Find out more about what our API's look like and what you can do with them. 
 
-* [Arrival At Exit](https://github.com/NxtPort/API/tree/master/ArrivalAtExit)
+* [Arrival At Exit Services](https://github.com/NxtPort/API/tree/master/ArrivalAtExit)
 * [Green Lights](https://github.com/NxtPort/API/tree/master/GreenLights)
-* [Import Consignment Data](https://github.com/NxtPort/API/tree/master/ImportConsignmentData)
+* [Import Consignment](https://github.com/NxtPort/API/tree/master/ImportConsignmentData)
 * [Next Mode of Transport](https://github.com/NxtPort/API/tree/master/NextModeOfTransport) 
-* [PortCall+](https://github.com/NxtPort/API/tree/master/PortCallPlus) by Port+ 
-* [PortDirectory](https://github.com/NxtPort/API/tree/master/PortDirectory) by Port+
-* [Secure Container Release](https://github.com/NxtPort/API/tree/master/SecureContainerRelease) by T-Mining
+* [Portcall+](https://github.com/NxtPort/API/tree/master/PortCallPlus) by Port+ 
+* [Port Directory](https://github.com/NxtPort/API/tree/master/PortDirectory) by Port+
+* [Secured Container Release](https://github.com/NxtPort/API/tree/master/SecureContainerRelease) by T-Mining
 * [Tresco Location](https://github.com/NxtPort/API/tree/master/TrescoLocation)
-* [UN Location Codes](https://github.com/NxtPort/API/tree/master/UNLoCodes)
+* [UN/Locode](https://github.com/NxtPort/API/tree/master/UNLoCodes)
 * [Vessel Stay](https://github.com/NxtPort/API/tree/master/VesselStay)
 * [VGM](https://github.com/NxtPort/API/tree/master/Vgm)
 * [eBalie+ Notification Service](https://github.com/NxtPort/API/tree/master/eBaliePlusNotificationService)
@@ -26,11 +26,12 @@ Find out more about what our API's look like and what you can do with them.
 
 Discover and interact with the NxtPort API's without having any of the implementation logic in place. Click any of the following links for documentation in OpenAPI format.
 
-* [Import Consignment Data](https://nxtport.github.io/?api=import_consignment_data)
-* [PortCall+](https://nxtport.github.io/?api=port_call_plus) by Port+ 
-* [PortDirectory](https://nxtport.github.io/?api=port_directory) by Port+
-* [Secure Container Release](https://nxtport.github.io/?api=secure_container_release) by T-Mining
-* [UN Location Codes](https://nxtport.github.io/?api=unlocode)
+* [Import Consignment](https://nxtport.github.io/?api=import_consignment_data)
+* [Portcall+](https://nxtport.github.io/?api=port_call_plus) by Port+ 
+* [Port Directory](https://nxtport.github.io/?api=port_directory) by Port+
+* [Secured Container Release](https://nxtport.github.io/?api=secure_container_release) by T-Mining
+* [Tresco Location](https://nxtport.github.io/?api=tresco_location)
+* [UN/Locode](https://nxtport.github.io/?api=unlocode)
 * [Vessel Stay](https://nxtport.github.io/?api=vessel_stay)
 * [VGM](https://nxtport.github.io/?api=vgm)
 * [Next Mode of Transport](https://nxtport.github.io/?api=nmot)
