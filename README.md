@@ -21,6 +21,7 @@ Find out more about what our API's look like and what you can do with them.
 * [VGM](https://github.com/NxtPort/API/tree/master/Vgm)
 * [eBalie+ Notification Service](https://github.com/NxtPort/API/tree/master/eBaliePlusNotificationService)
 * [Ocean Schedules](https://github.com/NxtPort/API/tree/master/OceanSchedules)
+* [Bulkchain](https://github.com/NxtPort/API/tree/master/Bulkchain)
 
 ## Swagger definitions
 
