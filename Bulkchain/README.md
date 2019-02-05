@@ -26,12 +26,12 @@ The following roles will be added over the coming months.
 Interested companies can already join the initiative by contacting us. 
 
 # Using the Bulkchain Export API
-The API is still under development but soon we already opened a POC for companies to have a sneak peek in a test environment.
+The API is still under development but we already opened a POC for companies to have a sneak peek in a test environment.
 In order to use the sneak peek of the API, you will need to
 <!--* subscribe to the live edition of the Bulkchain Export API-->
 * Register on [the NxtPort market](https://market.nxtport.eu/) (if you have not already done so)
-* [contact NxtPort](mailto:steven.schutter@nxtport.com) to join the preview so that Account details and OAuth parameters can be provided to you
-* call the API with the obtained subscription/API key and OAuth parameters
+* [Contact NxtPort](mailto:steven.schutter@nxtport.com) to join the preview so that Account details and OAuth parameters can be provided to you
+* Call the API with the obtained subscription/API key and OAuth parameters
 
 ## Contents
 * [Join the Preview](./preview.md)
