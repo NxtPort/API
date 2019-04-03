@@ -14,7 +14,6 @@ Find out more about what our API's look like and what you can do with them.
 * [Next Mode of Transport](https://github.com/NxtPort/API/tree/master/NextModeOfTransport) 
 * [Portcall+](https://github.com/NxtPort/API/tree/master/PortCallPlus) by Port+ 
 * [Port Directory](https://github.com/NxtPort/API/tree/master/PortDirectory) by Port+
-* [Secured Container Release](https://github.com/NxtPort/API/tree/master/SecureContainerRelease) by T-Mining
 * [Tresco Location](https://github.com/NxtPort/API/tree/master/TrescoLocation)
 * [UN/Locode](https://github.com/NxtPort/API/tree/master/UNLoCodes)
 * [Vessel Stay](https://github.com/NxtPort/API/tree/master/VesselStay)
@@ -28,9 +27,8 @@ Find out more about what our API's look like and what you can do with them.
 Discover and interact with the NxtPort API's without having any of the implementation logic in place. Click any of the following links for documentation in OpenAPI format.
 
 * [Import Consignment](https://nxtport.github.io/?api=import_consignment_data)
-* [Portcall+](https://nxtport.github.io/?api=port_call_plus) by Port+ 
+* [Portcall+](https://nxtport.github.io/?api=port_call_plus) by Port+
 * [Port Directory](https://nxtport.github.io/?api=port_directory) by Port+
-* [Secured Container Release](https://nxtport.github.io/?api=secure_container_release) by T-Mining
 * [Tresco Location](https://nxtport.github.io/?api=tresco_location)
 * [UN/Locode](https://nxtport.github.io/?api=unlocode)
 * [Vessel Stay](https://nxtport.github.io/?api=vessel_stay)
