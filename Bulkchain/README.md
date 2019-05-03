@@ -39,7 +39,7 @@ In order to use the sneak peek of the API, you will need to
 * [Authentication](./authentication.md)
 
 ## Try it out
-The API is under development, a swagger file can be made available after registration and subscription. Join the [private sneak peek](./preview.md).
+A yaml file is located [here](https://nxtport.github.io/api/bulkchain_export.yaml) which you can try out by clicking [here](https://nxtport.github.io/?api=bulkchain_export).
 
 ## More information
 More information about this API is available on
