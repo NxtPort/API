@@ -45,8 +45,9 @@ _* = required_
 Terminal codes are needed to link the exchanges with the right terminal. Use the BICS codes. (URL: https://www.binnenvaart.org/terminal-codes/)
 
 For containers the participating terminals are:
+
 | Container Terminal | BICS |
-| ------------------ | ---- |
+| --- | --- |
 | MSC PSA European Terminal (MPET) | 01718, 01742 |
 | DP World Antwerp Gateway Terminal | 01700 |
 | PSA Noordzee Terminal	| 0S913 |
