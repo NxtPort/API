@@ -21,6 +21,7 @@ Find out more about what our API's look like and what you can do with them.
 * [eBalie+ Notification Service](https://github.com/NxtPort/API/tree/master/eBaliePlusNotificationService)
 * [Ocean Schedules](https://github.com/NxtPort/API/tree/master/OceanSchedules)
 * [Bulkchain](https://github.com/NxtPort/API/tree/master/Bulkchain)
+* [Container Tare Weight](https://github.com/NxtPort/API/tree/master/ContainerTareWeight)
 
 ## Swagger definitions
 
@@ -35,5 +36,6 @@ Discover and interact with the NxtPort API's without having any of the implement
 * [VGM](https://nxtport.github.io/?api=vgm)
 * [Next Mode of Transport](https://nxtport.github.io/?api=nmot)
 * [Ocean Schedules](https://nxtport.github.io/?api=ocean_schedules)
+* [Container Tare Weight](https://nxtport.github.io/?api=ctw)
 
 More information about the OpenAPI specification at [openapis.org](https://www.openapis.org/).
