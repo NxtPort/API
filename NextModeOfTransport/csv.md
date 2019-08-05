@@ -5,12 +5,13 @@
 The file format is CSV. Because there's no standard for CSV some clarification is needed:
 
 * Text file in UTF-8 format with one line for each exchange.
-* The information for each exchange is laid out in 18 columns.
+* The information for each exchange is laid out in 19 columns.
 * Columns with visit information are duplicate for each exchange.
 * The column values can't contain any double quotes (") or semi-colons (;)
 * The columns are separated by a semi-colon (;)
 * The first line of the file is ignored. It's assumed this line contains the column headers.
 * Empty lines are ignored.
+* The columns need to be in exactly the same order as described below.
 
 Three of the columns contain a date and time:
 
@@ -39,6 +40,7 @@ Three of the columns contain a date and time:
 | 16 | Destination locode | Locode of the destination terminal | Official UN Locode | Mandatory for operators, optional for forwarders |
 | 17 | Destination terminal code | Terminal code of the destination terminal | Terminal code format commonly in use | Mandatory for operators, optional for forwarders |
 | 18 | Connecting vessel | The connecting vessel for a transshipment | IMO international formatting | Optional: to be used for transshipments |
+| 19 | Reference | Your own custom reference for this exchange | Any value | Optional |
 _* = required_
 
 ## Terminal Codes
