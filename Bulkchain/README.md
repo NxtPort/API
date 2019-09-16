@@ -28,7 +28,6 @@ In order to join the Bulkchain pilot, you will need to
 * [Enumeration tables](https://nxtport.atlassian.net/wiki/spaces/BREAK/pages/1344143564/Enumerations)
 ## Try it out
 To get access to our test/staging environment and the necessary credentials, please contact our [support team](https://nxtport.atlassian.net/servicedesk/customer/portal/1) through our Support helpdesk.
- 
 ## More information
 More information about this API or NxtPort is available on
 * [The Bulkchain Website](https://www.nxtport.com/market/pilot/bulkchain)
