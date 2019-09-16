@@ -1,7 +1,7 @@
 
-# Bulkchain - Export
+# Bulkchain 
 ```
- This documentation applies to v0.1 of the API. It is still under development so updates will be applied.
+ This documentation applies to v1.0 of the API. The API is in pilot and under constant development so updates will be applied.
 ```
 # Purpose of the API
 
@@ -10,38 +10,26 @@ The Bulkchain initiative was launched on request by the breakbulk community in o
 By sharing data during import, export, storage and CFS processes, the different stakeholders that work together to ship breakbulk cargo around the globe, can interact with each other with secured and organised guidelines. 
 This allows them to jointly build-up orders, track the status of commercial and custom releases or be notified when critical information is missing to meet closings or deadlines.
 
-We currently support the following supply chain roles within the Proof of Concept:
+We advise all involved parties to [read the introduction](https://nxtport.atlassian.net/wiki/spaces/BREAK/pages/1353351170/Introduction+to+Bulkchain) to Bulkchain on our Wiki.  
 
- - Forwarders
- - Liner/Shipping agents
- - Terminals
-
-The following roles will be added over the coming months. 
- - Customs
- - Port Authorities
- - Shipper/Consignor
- - Receiver/Consignee
- - Transport company (truck/rail/barge/coaster)
-
-Interested companies can already join the initiative by contacting us. 
-
-# Using the Bulkchain Export API
-The API is still under development but we already opened a POC for companies to have a sneak peek in a test environment.
-In order to use the sneak peek of the API, you will need to
+# Using the Bulkchain API
+In order to join the Bulkchain pilot, you will need to
 <!--* subscribe to the live edition of the Bulkchain Export API-->
-* Register on [the NxtPort market](https://market.nxtport.eu/) (if you have not already done so)
-* [Contact NxtPort](mailto:steven.schutter@nxtport.com) to join the preview so that Account details and OAuth parameters can be provided to you
+* Register on [the NxtPort market](https://signup.nxtport.eu/) (if you have not already done so)
+* Subscribe to the [Bulkchain Use Case](https://www.nxtport.com/market/pilot/bulkchain)
+* [Contact NxtPort](mailto:steven.schutter@nxtport.com) to join the pilot so that Account details and OAuth parameters can be provided to you
 * Call the API with the obtained subscription/API key and OAuth parameters
-
-## Contents
-* [Join the Preview](./preview.md)
-<!--* How to use the API-->
-* [Authentication](./authentication.md)
-
+## Documentation
+* [Introduction to Bulkchain](https://nxtport.atlassian.net/wiki/spaces/BREAK/pages/1353351170/Introduction+to+Bulkchain), a mustread for all new involved parties
+* [Authentication](./authentication.md), how to connect to our API's
+* [API documentation](https://nxtport.atlassian.net/wiki/spaces/BREAK/pages/1334870375/Bulkchain+v1+API+description)
+* [Swagger file](http://nxt-core-sf-weu-stg.westeurope.cloudapp.azure.com:85/bulkchain/live/api/v1/swagger/index.html) (staging)
+* [A user interface](http://app.bulkchain.io) is available once you have subscribed to the Bulkchain use case
+* [Enumeration tables](https://nxtport.atlassian.net/wiki/spaces/BREAK/pages/1344143564/Enumerations)
 ## Try it out
-The API is under development, a swagger file can be made available after registration and subscription. Join the [private sneak peek](./preview.md).
-
+To get access to our test/staging environment and the necessary credentials, please contact our [support team](https://nxtport.atlassian.net/servicedesk/customer/portal/1) through our Support helpdesk.
+ 
 ## More information
-More information about this API is available on
-* [The Bulkchain Website](http://bulkchain.nxtport.com/)
+More information about this API or NxtPort is available on
+* [The Bulkchain Website](https://www.nxtport.com/market/pilot/bulkchain)
 * [The NxtPort market](https://market.nxtport.eu/)
