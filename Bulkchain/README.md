@@ -23,10 +23,12 @@ In order to join the Bulkchain pilot, you will need to
 * [Introduction to Bulkchain](https://nxtport.atlassian.net/wiki/spaces/BREAK/pages/1353351170/Introduction+to+Bulkchain), a mustread for all new involved parties
 * [Authentication](./authentication.md), how to connect to our API's
 * [API documentation](https://nxtport.atlassian.net/wiki/spaces/BREAK/pages/1334870375/Bulkchain+v1+API+description)
-* [Swagger file](http://nxt-core-sf-weu-stg.westeurope.cloudapp.azure.com:85/bulkchain/live/api/v1/swagger/index.html) (staging)
+* [Swagger file](https://nxtport.github.io/?api=bulkchain)
 * [A user interface](http://app.bulkchain.io) is available once you have subscribed to the Bulkchain use case
 * [Enumeration tables](https://nxtport.atlassian.net/wiki/spaces/BREAK/pages/1344143564/Enumerations)
 ## Try it out
+A yaml file is located [here](https://nxtport.github.io/api/bulkchain.yaml) which you can try out by clicking [here](https://nxtport.github.io/?api=bulkchain).
+
 To get access to our test/staging environment and the necessary credentials, please contact our [support team](https://nxtport.atlassian.net/servicedesk/customer/portal/1) through our Support helpdesk.
 ## More information
 More information about this API or NxtPort is available on
