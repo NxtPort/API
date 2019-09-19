@@ -28,6 +28,7 @@ In order to join the Bulkchain pilot, you will need to
 * [Enumeration tables](https://nxtport.atlassian.net/wiki/spaces/BREAK/pages/1344143564/Enumerations)
 ## Try it out
 A yaml file is located [here](https://nxtport.github.io/api/bulkchain.yaml) which you can try out by clicking [here](https://nxtport.github.io/?api=bulkchain).
+Remark: For staging environment, use the following endpoint: 'https://api-stg.nxtport.eu/bulkchain/v1'.
 
 To get access to our test/staging environment and the necessary credentials, please contact our [support team](https://nxtport.atlassian.net/servicedesk/customer/portal/1) through our Support helpdesk.
 ## More information
