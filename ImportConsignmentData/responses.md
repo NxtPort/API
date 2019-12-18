@@ -49,10 +49,17 @@ It's important to know that all fields are optional. We'll give you everything w
 ### Equipment
 ```xml
 <Equipment>
-    <EquipmentType>Container</EquipmentType>
+    <EquipmentType>CN</EquipmentType>
     <Identifier>CNPPI111001</Identifier>
     <Type>45G0</Type>
     <Status>full</Status>
+    <TransportCondition>FCL</TransportCondition>
+    <Seal>
+        <SealNumber>089902</SealNumber>
+        <SealingParty>TO</SealingParty>
+        <SealType>blockSeal</SealType>
+        <SealCondition>ok</SealCondition>
+    </Seal>
     <Weight>
         <VgmWeight>16000</VgmWeight>
         <VgmWeightUnit>KGM</VgmWeightUnit>
@@ -63,12 +70,11 @@ It's important to know that all fields are optional. We'll give you everything w
 | Field | Meaning |
 |--------|--------|
 |  Equipment      | The thing that the action applies on, can be a container, a vehicle, ...       |
-|  Equipment.EquipmentType      |  (enum: "container"): container, vehicle, ...      |
-|  Equipment.Identifier      |   (string: OOCL1234569) : container number in case of container, VIN number in case of verhicle, ...     |
+|  Equipment.EquipmentType      |  (enum: "CN"): container, vehicle, ...      |
+|  Equipment.Identifier      |   (string: OOCL1234569) : container number in case of container, VIN number in case of vehicle, ...     |
 |  Equipment.Type      |  Container size and type code      |
-|  Equipment.NumberOfContainers      |  (int: "2"): in case of empty pickup or drop-off, several containers can be pre-announced at once simply by providing the amount of containers that will be picked up / dropped-off.      |
-|  Equipment.Flow      | (enum: "import)": "import", "export", "transshipment", "continental"      |
 |  Equipment.Status      | (enum: "full"): "full", "empty"       |
+|  Equipment.TransportCondition  | (...)  |
 |  Equipment.Seal      | Several seals can be applied on the container       |
 |  Equipment.Seal.SealNumber      | (String: "089902")       |
 |  Equipment.Seal.SealingParty      | (enum: "TO"): AB = niet gekend, AC = Quarantaine agent, CA = Carrier, CU = douane, SH = shipper, TO = Terminaloperator       |
@@ -77,13 +83,6 @@ It's important to know that all fields are optional. We'll give you everything w
 |  Equipment.Weight      | Fields to indicate the weight of the container       |
 |  Equipment.Weight.VgmWeight      |Verified gross weight in kg        |
 |  Equipment.Weight.VgmWeightUnit | enum: “KGM”): “KGM”        |
-|  Equipment.Temperature      | (enum: "full"): "full", "empty"       |
-|  Equipment.Temperature.PreferredTemperature      |  (String: “-5,0)     |
-|  Equipment.Temperature.PreferredTemperatureUnit       | (enum: “C”): “c”, “f”, “C”, “F”    |
-|  Equipment.Temperature.MaxTemperature       | (String: “-10,0”)       |
-|  Equipment.Temperature.MaxTemperatureUnit       | (enum: “C”): “c”, “f”, “C”, “F”       |
-|  Equipment.Temperature.MinTemperature       | (String: “-5,0”)       |
-|  Equipment.Temperature.MinTemperatureUnit      | (enum: “C”): “c”, “f”, “C”, “F”       |
 
 
 ### Consignment
@@ -120,6 +119,7 @@ It's important to know that all fields are optional. We'll give you everything w
         <Stuffing>
             <Identifier>CNPPI111001</Identifier>
             <NumberOfPackages>70</NumberOfPackages>
+            <GrossWeight>...</GrossWeight>
         </Stuffing>
     </GoodsItem>
 </Consignment>
@@ -132,23 +132,15 @@ It's important to know that all fields are optional. We'll give you everything w
 |  Consignment.SeaVoyage.BlNumber   |  (string: "ABC12345")     |
 |  Consignment.SeaVoyage.CargoAgent      |       |
 |  Consignment.SeaVoyage.CargoAgent.AgentCode      | (string: "SOSIAN")      |
-|  Consignment.SeaVoyage.CargoAgent.carrierCode       | (string: "OOCL")      |
-|  Consignment.SeaVoyage.CargoAgent.scacCode       |  (string: "OOCL")      |
 |  Consignment.SeaVoyage.PortOfLoading      |       |
-|  Consignment.SeaVoyage.PortOfLoading.NxtLocationId       | (nxtId: "NXT.BEANR"): nxtport location identifier       |
 |  Consignment.SeaVoyage.PortOfLoading.UnloCode       | (string: "BEANR")      |
-|  Consignment.SeaVoyage.PortOfLoading.TerminalCode      |(string: "K913"): code identifying the terminal at the place of loading       |
 |  Consignment.SeaVoyage.PortOfDestination      |       |
-|  Consignment.SeaVoyage.PortOfDestination.NxtLocationId      | (nxtId: "NXT.BEANR"): nxtport location identifier      |
 |  Consignment.SeaVoyage.PortOfDestination.UnloCode      | (string: "BEANR")      |
 |  Consignment.SeaVoyage.PortOfDestination.TerminalCode      | (string: "K913"): code identifying the terminal at the place of Destination      |
 |  Consignment.SeaVoyage.Vessel      |       |
-|  Consignment.SeaVoyage.Vessel.Name      | (string)      |
 |  Consignment.SeaVoyage.Vessel.Imo      | (imo code format: "L123456")       |
-|  Consignment.SeaVoyage.Vessel.CallSign      | (call sign format: "AB123")      |
 |  Consignment.SeaVoyage.VesselStay      |       |
 |  Consignment.SeaVoyage.VesselStay.StayNumber      | (string: "V185322"))      |
-|  Consignment.SeaVoyage.VesselStay.Eta      |(dateTime: "2017-08-27T15:00:00Z"): date and time the vessel will arrive       |
 |  Consignment.GoodsItem      | Several goods items can be part or the consignment      |
 |  Consignment.GoodsItem.SequenceNr      | Item nr or sequence nr of the goods item      |
 |  Consignment.GoodsItem.Description      | Free text field indicating the cargo type      |
@@ -160,6 +152,7 @@ It's important to know that all fields are optional. We'll give you everything w
 |  Consignment.GoodsItem.Stuffing      | Several objects allocating (a part of) this good in the earlier defined equipments (containers)      |
 |  Consignment.GoodsItem.Stuffing.Identifier      |   (string: "OOCL1234569") : container number in case of container, VIN number in case of verhicle, ..     |
 |  Consignment.GoodsItem.Stuffing.NumberOfPackages      |  (int: "140"): number of packages stuffed in this equipment     |
+|  Consignment.GoodsItem.Stuffing.GrossWeight      |  ...     |
 
 ### TechnicalInfo
 
@@ -202,11 +195,6 @@ It's important to know that all fields are optional. We'll give you everything w
 |  TechnicalInfo.ParentDocument.DataProviderCodeType      | Type of code identifying the data provider, fixed relation with the type of document     |
 |  TechnicalInfo.ParentDocument.Code      | (Enum) predefined codes indication a certain status or info about the data delivered. e.g. "CUSCARCREATEDACCEPTED" (see below for description)     |
 |  TechnicalInfo.ParentDocument.Description      | Human readable explanation of the code. eg.g "Data comes from a cuscar message that was accepted by     |
-|  TechnicalInfo.receiverActionType       |(enum: "inform"): defines what the receiver must/can do with the info. Is it just informational or is it a commitment or a question or a check: "inform", "confirm" (confirm appointment), "request" (send pre-announcement, expect confirmation), "cancel" (cancel a pre-announcement), "check" (check that the content of the message is correct, so reference number exists, container exists, container number and type agree, ...)      |
-|  TechnicalInfo.platformActionType       | (enum: "transmit"): defines what is to be done with this information: "store" (and thereby expose under sharing rules), "transmit" (to receiver), "call" (in case this is an API call which expects answer), "subscribe" (to create a link between the sender of this message and the transactional object in it, to be able to receive push updates on the object)     |
-|  TechnicalInfo.error      | multiple error objects can be added     |
-|  TechnicalInfo.errorCode       |(String "ERR002")      |
-|  TechnicalInfo.errorDescription       |             (String "Date must be after current date")  |
 
 The TechnicalInfo.ParentDocument.Code field is a concatenation of the action of the CUSCAR and the result of the CUSRES.
 
