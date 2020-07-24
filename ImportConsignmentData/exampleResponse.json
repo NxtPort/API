@@ -1,102 +1,92 @@
 {
-    "consignmentData": {
-        "equipment": [
-            {
-                "equipmentType": "Container",
-                "identifier": "CNPPI111001",
-                "type": "45G0",
-                "status": "full",
-                "transportCondition": null,
-                "seal": null,
-                "weight": {
-                    "vgmWeight": "16000",
-                    "vgmWeightUnit": "KGM"
-                }
-            },
-            {
-                "equipmentType": "Container",
-                "identifier": "CNPPI111002",
-                "type": "45G0",
-                "status": "full",
-                "transportCondition": null,
-                "seal": null,
-                "weight": {
-                    "vgmWeight": "16000",
-                    "vgmWeightUnit": "KGM"
-                }
-            }
-        ],
-        "consignment": [
-            {
-                "sequenceNr": "1",
-                "seaVoyage": {
-                    "blNumber": "BMSINGLE001",
-                    "cargoAgent": {
-                        "agentCode": "CCCFC"
-                    },
-                    "portOfLoading": {
-                        "unloCode": "USBAL"
-                    },
-                    "portOfDestination": {
-                        "unloCode": "BEANR",
-                        "terminalCode": "K913"
-                    },
-                    "vessel": {
-                        "imo": "L1234567"
-                    },
-                    "vesselStay": {
-                        "stayNumber": "V185322"
-                    }
-                },
-                "goodsItem": [
-                    {
-                        "sequenceNr": "1",
-                        "description": "Coffee",
-                        "packageType": "PK",
-                        "numberOfPackages": "140",
-                        "grossWeight": "32000",
-                        "grossWeightUnit": "KGM",
-                        "customsStatus": "T1",
-                        "stuffing": [
-                            {
-                                "identifier": "CNPPI111001",
-                                "numberOfPackages": "70",
-                                "grossWeight": null
-                            }
-                        ]
-                    }
-                ]
-            }
+  "consignmentData": {
+    "equipment": [
+      {
+        "equipmentType": "CN",
+        "identifier": "YMLU9033312",
+        "type": "45G1",
+        "status": "",
+        "transportCondition": "FCL",
+        "weight": {
+          "vgmWeight": "20146",
+          "vgmWeightUnit": "KGM"
+        }
+      },
+      {
+        "equipmentType": "CN",
+        "identifier": "YMLU8847438",
+        "type": "45G1",
+        "status": "",
+        "transportCondition": "FCL",
+        "weight": {
+          "vgmWeight": "20146",
+          "vgmWeightUnit": "KGM"
+        }
+      }
+    ],
+    "consignment": [
+      {
+        "sequenceNr": "126",
+        "seaVoyage": {
+          "blNumber": "N360128750",
+          "cargoAgent": {
+            "agentCode": "YAMIBE"
+          },
+          "portOfLoading": {
+            "unloCode": "KRKAN"
+          },
+          "portOfDestination": {
+            "unloCode": "BEANR",
+            "terminalCode": "S913"
+          },
+          "vessel": {
+            "imo": "9689603"
+          },
+          "vesselStay": {
+            "stayNumber": "183036"
+          }
+        },
+        "goodsItem": [
+          {
+            "sequenceNr": "1",
+            "description": "SBS PRODUCT GROUPSBS LG411 S     40,000.000 KG* H.S.C ODE NO.4002.19**PIC: BRIG",
+            "packageType": "BG",
+            "numberOfPackages": "80",
+            "grossWeight": "40292",
+            "grossWeightUnit": "KGM",
+            "customsStatus": "T1",
+            "stuffing": [
+              {
+                "identifier": "YMLU9033312",
+                "numberOfPackages": "40"
+              },
+              {
+                "identifier": "YMLU8847438",
+                "numberOfPackages": "40"
+              }
+            ]
+          }
         ]
-    },
-    "technicalInfo": {
-        "code": "CUSCARCREATEDACCEPTED",
-        "description": "a positive response was received from the customs",
-        "created": "2017-08-27T15:00:00Z",
-        "dataProvider": "NXT17000000132",
-        "parentDocument": [
-            {
-                "nxtInternalId": "123454rgrgeggrege",
-                "identifier": "112233L1234567100",
-                "type": "CUSCAR",
-                "received": "2017-08-27T15:00:00Z",
-                "dataProvider": "NXT17000000132",
-                "dataProviderCode": "CCCFC",
-                "dataProviderCodeType": "apicsAgentCode",
-                "code": "CREATED",
-                "description": "Cuscar document was sent to the customs"
-            },
-            {
-                "nxtInternalId": "fzfizigfre15198494",
-                "identifier": "112233L1234567100",
-                "type": "CUSRES",
-                "received": "2017-08-28T16:00:00Z",
-                "dataProvider": "NXT17000000158",
-                "dataProviderCode": "CCCFC",
-                "dataProviderCodeType": "apicsAgentCode",
-                "code": "ACCEPTED",
-                "description": "A positive response was received from the customs"
-            }
-        ]
-    }
+      }
+    ]
+  },
+  "technicalInfo": {
+    "code": "CUSCARCREATED",
+    "description": "First forwarding of basic data (CUSCAR CREATED)",
+    "created": "2019-12-18T12:19:50.8272692Z",
+    "dataProvider": "YAMIBE",
+    "parentDocument": [
+      {
+        "nxtInternalId": "",
+        "identifier": "183036L9689603300",
+        "type": "CUSCAR",
+        "received": "2019-05-27T06:33:57Z",
+        "dataProvider": "",
+        "dataProviderCode": "YAMIBE",
+        "dataProviderCodeType": "apicsAgentCode",
+        "code": "SENT",
+        "description": "CUSCAR IS SENT, BUT NO CUSRES MESSAGE HAS BEEN RECEIVED FROM CUSTOMS YET"
+      }
+    ]
+  }
 }
