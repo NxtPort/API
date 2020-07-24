@@ -22,6 +22,7 @@ Find out more about what our API's look like and what you can do with them.
 * [Ocean Schedules](https://github.com/NxtPort/API/tree/master/OceanSchedules)
 * [Bulkchain](https://github.com/NxtPort/API/tree/master/Bulkchain)
 * [Container Tare Weight](https://github.com/NxtPort/API/tree/master/ContainerTareWeight)
+* [Certified Pick Up](https://github.com/NxtPort/API/tree/master/CertifiedPickUp)
 
 ## Swagger definitions
 
@@ -37,5 +38,6 @@ Discover and interact with the NxtPort API's without having any of the implement
 * [Next Mode of Transport](https://nxtport.github.io/?api=nmot)
 * [Ocean Schedules](https://nxtport.github.io/?api=ocean_schedules)
 * [Container Tare Weight](https://nxtport.github.io/?api=ctw)
+* [Certified Pick Up](https://nxtport.github.io/?api=certified_pick_up)
 
 More information about the OpenAPI specification at [openapis.org](https://www.openapis.org/).
