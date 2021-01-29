@@ -28,4 +28,5 @@ To get access to our test/staging environment and the necessary credentials, ple
 ## More information
 More information about this API or NxtPort is available on
 * [The Welcome Page]( https://www.nxtport.com/documentation/certified-pick-up)
-* [The NxtPort market](https://market.nxtport.eu/)
+* [The NxtPort market](https://www.nxtport.com/market/our-marketplace/marketplace)
+
