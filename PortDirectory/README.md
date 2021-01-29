@@ -18,7 +18,7 @@ The NxtPort platform now offers the Portdirectory as an API as well, so that you
 
 In order to use this API, you will need to 
 
-* create an account on [the NxtPort market](https://market.nxtport.eu)
+* create an account on [the NxtPort market](https://www.nxtport.com/market/our-marketplace/marketplace)
 * **subscribe** to the live or sandbox edition of the Portdirectory API 
 * obtain the related **subscription key**
 * **call the API** with the obtained subscription key
@@ -37,5 +37,5 @@ A yaml file is located [here](https://nxtport.github.io/api/port_directory.yaml)
 ## More information
 
 More information about this API is available on
-* [the NxtPort website](https://www.nxtport.eu)
-* [the NxtPort market](https://market.nxtport.eu)
+* [the NxtPort website](https://www.nxtport.com)
+* [the NxtPort market](https://www.nxtport.com/market/our-marketplace/marketplace)

@@ -15,7 +15,7 @@ NMoT visits and exchanges can be sent in three formats:
 
 In order to use this API, you will need to 
 
-* create an account on [the NxtPort market](https://market.nxtport.eu)
+* create an account on [the NxtPort market](https://www.nxtport.com/market/our-marketplace/marketplace)
 * **subscribe** to the live or sandbox edition of the Preannouncement API 
 * obtain the related **subscription key** shown in the market place
 * call the API with the obtained **subscription key**

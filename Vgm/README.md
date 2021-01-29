@@ -19,7 +19,7 @@ Currently, the NxtPort platform processes only new VERMAS submissions (not cance
 # Using the VGM API
 
 In order to use this API, you will need to 
-* create an account on [the NxtPort market](https://market.nxtport.eu)
+* create an account on [the NxtPort market](https://www.nxtport.com/market/our-marketplace/marketplace)
 * **subscribe** to the live or sandbox edition of the VGM API 
 * obtain the related **subscription key**
 * request a **client ID/secret** for your application
@@ -41,5 +41,5 @@ A yaml file is located [here](https://nxtport.github.io/api/vgm.yaml) which you 
 ## More information
 
 More information about this API is available on
-* [the NxtPort website](https://www.nxtport.eu)
-* [the NxtPort market](https://market.nxtport.eu)
+* [the NxtPort website](https://www.nxtport.com)
+* [the NxtPort market](https://www.nxtport.com/market/our-marketplace/marketplace)

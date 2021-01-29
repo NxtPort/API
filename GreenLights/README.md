@@ -6,7 +6,7 @@ Green Lights works together with [Next Mode of Transport](https://github.com/Nxt
 
 In order to get notifications, you have to:
 
-1. Create an account on [the NxtPort market](https://market.nxtport.eu)
+1. Create an account on [the NxtPort market](https://www.nxtport.com/market/our-marketplace/marketplace)
 2. Subscribe to the live edition of Next Mode of Transport
 3. Subscribe to the live edition of Green Lights
 4. If both subscriptions are approved, then contact support@nxtport.eu to set up a notification channel (e-mail, https post, AS2 message).
