@@ -16,7 +16,7 @@ In order to join the Certified Pick up pilot, you will need to
 
 ## Documentation
 * [Getting started]( https://www.nxtport.com/documentation/certified-pick-up/getting-started), a mustread for all new involved parties
-* [Registration & Subscription] (https://www.nxtport.com/documentation/certified-pick-up/c-point-registration)
+* [Registration and Subscription]( https://www.nxtport.com/documentation/certified-pick-up/c-point-registration)
 * [Using existing message types]( https://www.nxtport.com/documentation/certified-pick-up/using-existing-messages), additional information for Ship Agents/Terminals
 * [Integration Guidelines for Terminals]( https://www.nxtport.com/documentation/certified-pick-up/tig-terminal-integration-guidelines)
 * [Integration Guidelines for Ship Agents]( https://www.nxtport.com/documentation/certified-pick-up/aig-agent-integration-guidelines)
@@ -29,3 +29,4 @@ To get access to our test/staging environment and the necessary credentials, ple
 More information about this API or NxtPort is available on
 * [The Welcome Page]( https://www.nxtport.com/documentation/certified-pick-up)
 * [The NxtPort market](https://www.nxtport.com/market/our-marketplace/marketplace)
+
