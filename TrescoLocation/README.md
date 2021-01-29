@@ -14,7 +14,7 @@ Tresco Engineering, the European market leader in inland waterway charts and nav
 
 In order to use this API, you will need to 
 
-* create an account on [the NxtPort market](https://market.nxtport.eu)
+* create an account on [the NxtPort market](https://www.nxtport.com/market/our-marketplace/marketplace)
 * **subscribe** to the live or sandbox edition of the Arrival At Exit API 
 * obtain the related **subscription key** shown in the market place
 * call the API with the obtained **subscription key**

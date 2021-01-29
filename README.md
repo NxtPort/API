@@ -14,6 +14,8 @@ Find out more about what our API's look like and what you can do with them.
 * [Next Mode of Transport](https://github.com/NxtPort/API/tree/master/NextModeOfTransport) 
 * [Portcall+](https://github.com/NxtPort/API/tree/master/PortCallPlus) by Port+ 
 * [Port Directory](https://github.com/NxtPort/API/tree/master/PortDirectory) by Port+
+* [Port Stays](https://github.com/NxtPort/API/tree/master/PortStays) by APICS
+* [Port Voyages](https://github.com/NxtPort/API/tree/master/PortVoyages) by APICS
 * [Tresco Location](https://github.com/NxtPort/API/tree/master/TrescoLocation)
 * [UN/Locode](https://github.com/NxtPort/API/tree/master/UNLoCodes)
 * [Vessel Stay](https://github.com/NxtPort/API/tree/master/VesselStay)
@@ -31,6 +33,8 @@ Discover and interact with the NxtPort API's without having any of the implement
 * [Import Consignment](https://nxtport.github.io/?api=import_consignment_data)
 * [Portcall+](https://nxtport.github.io/?api=port_call_plus) by Port+
 * [Port Directory](https://nxtport.github.io/?api=port_directory) by Port+
+* [Port Stays](https://nxtport.github.io/?api=port_stays) by APICS
+* [Port Voyages](https://nxtport.github.io/?api=port_voyages) by APICS
 * [Tresco Location](https://nxtport.github.io/?api=tresco_location)
 * [UN/Locode](https://nxtport.github.io/?api=unlocode)
 * [Vessel Stay](https://nxtport.github.io/?api=vessel_stay)
