@@ -18,12 +18,7 @@ This moment can be up to 6 hours earlier than the time of the API call.
 
 # Using the PortStays API
 
-In order to use this API, you will need to 
-
-* create an account on [the NxtPort market](https://www.nxtport.com/market/our-marketplace/marketplace)
-* **subscribe** to the PortStays API 
-* obtain the related **subscription key** shown in the market place
-* call the API with the obtained **subscription key**
+In order to use this API, please follow the instructions [here](https://datasharing.portofantwerp.com/documentation/getting-started).
 
 
 ## Try it out
