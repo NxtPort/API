@@ -13,7 +13,7 @@ Port of Antwerp requires that connected parties provide COARRI and CODECO messag
 
 In order to use this API, you will need to
 
-* Register on [the NxtPort market](https://signup.nxtport.com)
+* [Register](https://signup.nxtport.eu) on the NxtPort Marketplace
 * **subscribe** to the POA EDI To XML Convertor API
 * Contact [NxtPort Support](https://nxtport.atlassian.net/servicedesk/customer/portal/1) to request your Client ID & Secret
 * Call the API with the obtained subscription/API key and OAuth parameters
