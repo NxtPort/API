@@ -6,13 +6,14 @@ If you are a business person, or you want to read about our API's from a functio
 
 ## Documentation for developers
 
-Find out more about what our API's look like and what you can do with them. 
+Find out more about what our API's look like and what you can do with them.
 
 * [Arrival At Exit Services](https://github.com/NxtPort/API/tree/master/ArrivalAtExit)
 * [Green Lights](https://github.com/NxtPort/API/tree/master/GreenLights)
 * [Import Consignment](https://github.com/NxtPort/API/tree/master/ImportConsignmentData)
-* [Next Mode of Transport](https://github.com/NxtPort/API/tree/master/NextModeOfTransport) 
-* [Portcall+](https://github.com/NxtPort/API/tree/master/PortCallPlus) by Port+ 
+* [Next Mode of Transport](https://github.com/NxtPort/API/tree/master/NextModeOfTransport)
+* [POA EDI To XML Convertor API](https://github.com/NxtPort/API/tree/master/POAEdiToXmlConvertorApi)
+* [Portcall+](https://github.com/NxtPort/API/tree/master/PortCallPlus) by Port+
 * [Port Directory](https://github.com/NxtPort/API/tree/master/PortDirectory) by Port+
 * [Port Stays](https://github.com/NxtPort/API/tree/master/PortStays) by APICS
 * [Port Voyages](https://github.com/NxtPort/API/tree/master/PortVoyages) by APICS
@@ -31,6 +32,7 @@ Find out more about what our API's look like and what you can do with them.
 Discover and interact with the NxtPort API's without having any of the implementation logic in place. Click any of the following links for documentation in OpenAPI format.
 
 * [Import Consignment](https://nxtport.github.io/?api=import_consignment_data)
+* [POA EDI To XML Convertor API](https://nxtport.github.io/?api=poa_edi_to_xml_convertor)
 * [Portcall+](https://nxtport.github.io/?api=port_call_plus) by Port+
 * [Port Directory](https://nxtport.github.io/?api=port_directory) by Port+
 * [Port Stays](https://nxtport.github.io/?api=port_stays) by APICS
